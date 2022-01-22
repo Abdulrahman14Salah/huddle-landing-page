@@ -190,6 +190,9 @@ section .box .content p {
   section .box .content {
     margin-left: 0;
   }
+  section .box .content h3 {
+    text-align: center;
+  }
   section .box .content p {
     text-align: center;
     width: 85%;
