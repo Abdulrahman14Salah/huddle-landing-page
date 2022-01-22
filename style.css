@@ -195,7 +195,8 @@ section .box .content p {
   }
   section .box .content p {
     text-align: center;
-    width: 85%;
+    width: 100%;
+    font-size: 0.9rem;
   }
 }
 section .box img {
