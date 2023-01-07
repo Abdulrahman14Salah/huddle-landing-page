@@ -28,11 +28,19 @@ body {
     font-family: inherit;
     border: none;
     padding: 10px 50px;
+    border: 1px solid var(--Pink);
     border-radius: 50px;
     box-shadow: 0px 5px 20px #ddd;
+    background-color: var(--Pink);
+    color: white;
     font-size: 16px;
     font-weight: bold;
+    transition: 0.3s all ease-in-out;
     cursor: pointer;
+    &:hover {
+      color: var(--Pink);
+      background-color: white;
+    }
   }
 
   header {
@@ -73,21 +81,31 @@ nav {
   align-items: center;
   justify-content: space-between;
 
+  .logo {
+    cursor: pointer;
+  }
+
   button {
     background-color: white;
+    border-color: #fff;
+    border-width: 2px;
+    color: #000;
+    transition: 0.3s all ease-in-out;
+    &:hover {
+      background-color: var(--Pink);
+      color: #fff;
+    }
   }
 
   @media (max-width: 992px) {
     .logo {
-      cursor: pointer;
-
       img {
         width: 170px;
       }
     }
 
     > button {
-      padding: 6px 30px;
+      padding: 3px 30px;
       font-size: 1.1rem;
     }
   }
@@ -112,11 +130,6 @@ nav {
     p {
       margin-bottom: 1.5rem;
       font-weight: 600;
-    }
-
-    button {
-      background-color: var(--Pink);
-      color: white;
     }
   }
 
@@ -159,8 +172,11 @@ main {
     padding: 3rem 3rem 0;
     margin-bottom: 2rem;
     border-radius: 15px;
+    &:nth-child(2) {
+      flex-direction: row-reverse;
+    }
     &:last-child {
-        margin-bottom: 0;
+      margin-bottom: 0;
     }
     .content {
       text-align: center;
@@ -239,7 +255,7 @@ footer {
       margin-bottom: 2rem;
     }
 
-    .grid-container {
+    .flex-container {
       ul {
         margin-bottom: 2.5rem;
         &:last-child {
@@ -247,17 +263,39 @@ footer {
           gap: 1.5rem;
           font-size: 1.7rem;
           margin-bottom: 1.5rem;
+          li:hover {
+            color: var(--Pink);
+          }
         }
         li {
           display: flex;
           align-items: baseline;
           gap: 0.5em;
           margin-bottom: 1em;
+          transition: .1s all ease-in-out;
+          cursor: pointer;
           img {
             margin-right: 1rem;
           }
         }
+        @media (min-width: 667px) {
+          &:first-child {
+            width: 40%;
+          }
+        }
       }
+      @media (min-width: 667px) {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &:first-child {
+          width: 40%;
+        }
+      }
+    }
+
+    .copyright {
+      text-align: center;
     }
   }
 }

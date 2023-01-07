@@ -26,11 +26,19 @@ body button {
   font-family: inherit;
   border: none;
   padding: 10px 50px;
+  border: 1px solid var(--Pink);
   border-radius: 50px;
   box-shadow: 0px 5px 20px #ddd;
+  background-color: var(--Pink);
+  color: white;
   font-size: 16px;
   font-weight: bold;
+  transition: 0.3s all ease-in-out;
   cursor: pointer;
+}
+body button:hover {
+  color: var(--Pink);
+  background-color: white;
 }
 body header {
   background: url(images/bg-hero-desktop.svg);
@@ -71,18 +79,26 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
+nav .logo {
+  cursor: pointer;
+}
 nav button {
   background-color: white;
+  border-color: #fff;
+  border-width: 2px;
+  color: #000;
+  transition: 0.3s all ease-in-out;
+}
+nav button:hover {
+  background-color: var(--Pink);
+  color: #fff;
 }
 @media (max-width: 992px) {
-  nav .logo {
-    cursor: pointer;
-  }
   nav .logo img {
     width: 170px;
   }
   nav > button {
-    padding: 6px 30px;
+    padding: 3px 30px;
     font-size: 1.1rem;
   }
 }
@@ -104,10 +120,6 @@ nav button {
 .box-content .content p {
   margin-bottom: 1.5rem;
   font-weight: 600;
-}
-.box-content .content button {
-  background-color: var(--Pink);
-  color: white;
 }
 .box-content .img img {
   max-width: 100%;
@@ -143,6 +155,9 @@ main .box {
   padding: 3rem 3rem 0;
   margin-bottom: 2rem;
   border-radius: 15px;
+}
+main .box:nth-child(2) {
+  flex-direction: row-reverse;
 }
 main .box:last-child {
   margin-bottom: 0;
@@ -216,21 +231,44 @@ footer {
 footer .container .footer-logo {
   margin-bottom: 2rem;
 }
-footer .container .grid-container ul {
+footer .container .flex-container ul {
   margin-bottom: 2.5rem;
 }
-footer .container .grid-container ul:last-child {
+footer .container .flex-container ul:last-child {
   display: inline-flex;
   gap: 1.5rem;
   font-size: 1.7rem;
   margin-bottom: 1.5rem;
 }
-footer .container .grid-container ul li {
+footer .container .flex-container ul:last-child li:hover {
+  color: var(--Pink);
+}
+footer .container .flex-container ul li {
   display: flex;
   align-items: baseline;
   gap: 0.5em;
   margin-bottom: 1em;
+  transition: 0.1s all ease-in-out;
+  cursor: pointer;
 }
-footer .container .grid-container ul li img {
+footer .container .flex-container ul li img {
   margin-right: 1rem;
+}
+@media (min-width: 667px) {
+  footer .container .flex-container ul:first-child {
+    width: 40%;
+  }
+}
+@media (min-width: 667px) {
+  footer .container .flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  footer .container .flex-container:first-child {
+    width: 40%;
+  }
+}
+footer .container .copyright {
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
