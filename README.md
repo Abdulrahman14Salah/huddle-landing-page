@@ -1,5 +1,4 @@
-# Huddle landing page with alternating feature blocks
-
+<h2 align="center">Huddle landing page with alternating feature blocks</h2>
 ![Design preview for the Huddle landing page with alternating feature blocks coding challenge](huddle-landing-page.png)
 
 ## Welcome! 👋
