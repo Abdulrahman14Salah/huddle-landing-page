@@ -25,7 +25,7 @@ body ul {
 body button {
   font-family: inherit;
   border: none;
-  padding: 5px 50px;
+  padding: 10px 50px;
   border: 1px solid var(--Pink);
   border-radius: 50px;
   box-shadow: 0px 5px 20px #ddd;
@@ -87,6 +87,7 @@ nav button {
   border-color: #fff;
   border-width: 2px;
   color: #000;
+  padding: 7px 50px;
   transition: 0.3s all ease-in-out;
 }
 nav button:hover {
