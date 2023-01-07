@@ -126,7 +126,7 @@ nav button:hover {
   max-width: 100%;
   height: auto;
 }
-@media (min-width: 667px) {
+@media (min-width: 992px) {
   .box-content {
     display: flex;
     justify-content: space-between;
@@ -177,25 +177,26 @@ main .box .content p {
   text-align: justify;
   word-break: break-all;
 }
-@media (min-width: 667px) {
+@media (min-width: 992px) {
   main .box .content {
     text-align: left;
+    width: 50%;
   }
 }
 main .box div img {
-  width: 60%;
   max-width: 100%;
   height: auto;
 }
-@media (min-width: 667px) {
+@media (min-width: 992px) {
   main .box div {
     margin-top: auto;
     margin-bottom: auto;
   }
 }
-@media (min-width: 667px) {
+@media (min-width: 992px) {
   main .box {
     display: flex;
+    justify-content: space-between;
     padding: 5rem;
     margin-bottom: 5rem;
     border-radius: 20px;
@@ -255,19 +256,17 @@ footer .container .flex-container ul li {
 footer .container .flex-container ul li img {
   margin-right: 1rem;
 }
-@media (min-width: 667px) {
+@media (min-width: 662px) {
   footer .container .flex-container ul:first-child {
-    width: 40%;
+    width: 45%;
+    margin-left: 2rem;
   }
 }
-@media (min-width: 667px) {
+@media (min-width: 662px) {
   footer .container .flex-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-  }
-  footer .container .flex-container:first-child {
-    width: 40%;
   }
 }
 footer .container .copyright {
